@@ -1,0 +1,144 @@
+body
+{
+    background-image: linear-gradient(to bottom,rgb(255, 203, 70),rgb(108,255,56)); 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3em;
+    margin:0;
+}
+
+main{
+    margin: 5% 15% 7% 15%;
+    align-items: center;
+}
+/* reglages pour le menu en haut pour toutes les pages */
+nav{ /* background pour le menu */
+    background-color: rgba(10, 101, 57, 35%) ;
+    border-radius: 0.3cm;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2% 15% 0% 15%
+    
+}
+.nav{ /* les liens des pages */
+    color:#000000;
+    transition-duration: 0.5s;
+}
+.nav:hover
+{
+    font-size: larger;
+    text-decoration: underline;
+    color:#6D2100;
+}
+#active{ /* parametres speciaux pour le lien de la page en cours */
+    color:#6D2100;
+    text-decoration: underline;
+}
+
+/* reglages des titres de toutes les pages */
+h1{
+    text-align: center;
+}
+h1,h2{
+    font-weight: bolder;
+}
+h3{
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* reglages pour les buttons de toutes les pages */
+.button{
+    display: inline-block;
+    border-radius: 12cm;
+    box-shadow: 0px 4px 8px 0px;
+    padding: 0.5em;
+    transition-duration: 0.5s;
+}
+.button:hover{
+    font-size: larger;
+    transition-duration: 0.5s;
+}
+a{
+    text-decoration: none;
+}
+
+/* reglages footer pour toutes les pages */
+footer{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to top, rgb(0,0,0,40%),rgb(0,0,0,0%));
+}
+.pcontact{
+    color: #0A6539;
+    font-weight: bold;
+}
+@media (max-width: 768px)
+{
+    h1
+    {
+        font-size: 140%;
+    }
+    h2
+    {
+        font-size: 110%;
+    }
+    h3
+    {
+        font-size: 70%;
+    }
+    p
+    {
+        font-size: 80%;
+    }
+    nav
+    {
+        font-size: xx-large;
+        margin: 0% 0% 5% 0%;
+        padding: 8% 0% 8% 0%;
+        justify-content: space-around;
+    }
+    .nav
+    {
+        font-size: 70%;
+    }
+    .nav:hover
+    {
+        font-size: 85%;
+        text-decoration: underline;
+        color:#6D2100;
+    }
+    main
+    {
+        margin: 0% 3% 10% 3%;
+    }
+    .button
+    {
+        font-size: 80%;
+    }
+    .button:hover
+    {
+        font-size: 90%;
+    }
+    footer
+    {
+        background-image: linear-gradient(to top, rgb(0,0,0,70%),rgb(0,0,0,0%));
+        flex-direction: column;
+    }
+    footer a
+    {
+        font-size: 80%;
+        color:white
+    }
+    footer p
+    {
+        font-size: 80%;
+    }
+    #imgfooter{
+        display:none;
+    }
+}
